@@ -48,6 +48,9 @@
     ],
     "shulkerboxtooltip": [
       "me.i509.fabric.bulkyshulkies.extension.BulkyTooltipHook"
+    ],
+    "quickshulker": [
+      "me.i509.fabric.bulkyshulkies.extension.QuickShulkerHook"
     ]
   },
   "mixins": [

@@ -24,6 +24,7 @@
 
 package me.i509.fabric.bulkyshulkies.container;
 
+import net.kyrptonaught.quickshulker.api.ItemStackInventory;
 import net.minecraft.container.Container;
 import net.minecraft.container.Slot;
 import net.minecraft.entity.player.PlayerEntity;
@@ -37,10 +38,10 @@ import me.i509.fabric.bulkyshulkies.BulkyShulkies;
 import me.i509.fabric.bulkyshulkies.api.SlotFactory;
 
 public class GenericContainer11x7 extends Container {
-	private final SidedInventory inventory;
+	private final Inventory inventory;
 	private final Text name;
 
-	public GenericContainer11x7(int syncId, SlotFactory slotFactory, PlayerInventory playerInventory, SidedInventory inventory, Text name) {
+	public GenericContainer11x7(int syncId, SlotFactory slotFactory, PlayerInventory playerInventory, Inventory inventory, Text name) {
 		super(null, syncId);
 		this.inventory = inventory;
 		this.name = name;
