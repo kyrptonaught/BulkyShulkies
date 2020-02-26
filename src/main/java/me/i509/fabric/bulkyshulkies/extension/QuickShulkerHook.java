@@ -24,6 +24,7 @@
 
 package me.i509.fabric.bulkyshulkies.extension;
 
+import net.kyrptonaught.quickshulker.api.Util;
 import net.kyrptonaught.quickshulker.api.ItemStackInventory;
 import net.kyrptonaught.quickshulker.api.QuickOpenableRegistry;
 import net.kyrptonaught.quickshulker.api.RegisterQuickShulker;
@@ -76,45 +77,45 @@ public class QuickShulkerHook implements RegisterQuickShulker {
 
                 QuickOpenableRegistry.register(((player, stack) -> ContainerProviderRegistry.INSTANCE.openContainer(QS$SHULKER_SCROLLABLE_CONTAINER, player,
                                 writer -> {
-                                        writer.writeInt(player.inventory.getSlotWithStack(stack));
+                                        writer.writeInt(Util.getSlotWithStack(player.inventory,stack));
                                         writer.writeText(ShulkerTexts.COPPER_CONTAINER);
                                 })), CopperShulkerBoxBlock.class);
                 QuickOpenableRegistry.register(((player, stack) -> ContainerProviderRegistry.INSTANCE.openContainer(QS$SHULKER_SCROLLABLE_CONTAINER, player,
                                 writer -> {
-                                        writer.writeInt(player.inventory.getSlotWithStack(stack));
+                                        writer.writeInt(Util.getSlotWithStack(player.inventory,stack));
                                         writer.writeText(ShulkerTexts.IRON_CONTAINER);
                                 })), IronShulkerBoxBlock.class);
                 QuickOpenableRegistry.register(((player, stack) -> ContainerProviderRegistry.INSTANCE.openContainer(QS$SHULKER_SCROLLABLE_CONTAINER, player,
                                 writer -> {
-                                        writer.writeInt(player.inventory.getSlotWithStack(stack));
+                                        writer.writeInt(Util.getSlotWithStack(player.inventory,stack));
                                         writer.writeText(ShulkerTexts.SILVER_CONTAINER);
                                 })), SilverShulkerBoxBlock.class);
                 QuickOpenableRegistry.register(((player, stack) -> ContainerProviderRegistry.INSTANCE.openContainer(QS$SHULKER_SCROLLABLE_CONTAINER, player,
                                 writer -> {
-                                        writer.writeInt(player.inventory.getSlotWithStack(stack));
+                                        writer.writeInt(Util.getSlotWithStack(player.inventory,stack));
                                         writer.writeText(ShulkerTexts.CURSED_SLAB_CONTAINER);
                                 })), CursedSlabShulkerBox.class);
 
                 QuickOpenableRegistry.register(((player, stack) -> ContainerProviderRegistry.INSTANCE.openContainer(QS$SHULKER_13x7_CONTAINER, player,
                                 writer -> {
-                                        writer.writeInt(player.inventory.getSlotWithStack(stack));
+                                        writer.writeInt(Util.getSlotWithStack(player.inventory,stack));
                                         writer.writeText(ShulkerTexts.OBSIDIAN_CONTAINER);
                                 })), ObsidianShulkerBoxBlock.class);
                 QuickOpenableRegistry.register(((player, stack) -> ContainerProviderRegistry.INSTANCE.openContainer(QS$SHULKER_13x7_CONTAINER, player,
                                 writer -> {
-                                        writer.writeInt(player.inventory.getSlotWithStack(stack));
+                                        writer.writeInt(Util.getSlotWithStack(player.inventory,stack));
                                         writer.writeText(ShulkerTexts.PLATINUM_CONTAINER);
                                 })), PlatinumShulkerBoxBlock.class);
 
                 QuickOpenableRegistry.register(((player, stack) -> ContainerProviderRegistry.INSTANCE.openContainer(QS$SHULKER_11x7_CONTAINER, player,
                                 writer -> {
-                                        writer.writeInt(player.inventory.getSlotWithStack(stack));
+                                        writer.writeInt(Util.getSlotWithStack(player.inventory,stack));
                                         writer.writeText(ShulkerTexts.DIAMOND_CONTAINER);
                                 })), DiamondShulkerBoxBlock.class);
 
                 QuickOpenableRegistry.register(((player, stack) -> ContainerProviderRegistry.INSTANCE.openContainer(QS$SHULKER_9x7_CONTAINER, player,
                                 writer -> {
-                                        writer.writeInt(player.inventory.getSlotWithStack(stack));
+                                        writer.writeInt(Util.getSlotWithStack(player.inventory,stack));
                                         writer.writeText(ShulkerTexts.GOLD_CONTAINER);
                                 })), GoldShulkerBoxBlock.class);
 
