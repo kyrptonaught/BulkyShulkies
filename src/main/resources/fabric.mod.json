@@ -51,6 +51,9 @@
     ],
     "quickshulker": [
       "me.i509.fabric.bulkyshulkies.extension.QuickShulkerHook"
+    ],
+    "quickshulker_client": [
+      "me.i509.fabric.bulkyshulkies.client.extension.QuickShulkerHookClient"
     ]
   },
   "mixins": [
