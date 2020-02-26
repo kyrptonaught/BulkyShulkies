@@ -24,20 +24,23 @@
 
 package me.i509.fabric.bulkyshulkies.client.extension;
 
+import net.kyrptonaught.quickshulker.api.RegisterQuickShulkerClient;
+
+import net.fabricmc.fabric.api.client.screen.ScreenProviderRegistry;
+
 import me.i509.fabric.bulkyshulkies.client.screen.Generic11x7Screen;
 import me.i509.fabric.bulkyshulkies.client.screen.Generic13x7Screen;
 import me.i509.fabric.bulkyshulkies.client.screen.Generic9x7Screen;
 import me.i509.fabric.bulkyshulkies.client.screen.ScrollableScreen;
 import me.i509.fabric.bulkyshulkies.extension.QuickShulkerHook;
-import net.fabricmc.fabric.api.client.screen.ScreenProviderRegistry;
-import net.kyrptonaught.quickshulker.api.RegisterQuickShulkerClient;
 
 public class QuickShulkerHookClient implements RegisterQuickShulkerClient {
-	@Override
-	public void registerClient() {
-		ScreenProviderRegistry.INSTANCE.registerFactory(QuickShulkerHook.QS$SHULKER_9x7_CONTAINER, Generic9x7Screen::createScreen);
-		ScreenProviderRegistry.INSTANCE.registerFactory(QuickShulkerHook.QS$SHULKER_11x7_CONTAINER, Generic11x7Screen::createScreen);
-		ScreenProviderRegistry.INSTANCE.registerFactory(QuickShulkerHook.QS$SHULKER_13x7_CONTAINER, Generic13x7Screen::createScreen);
-		ScreenProviderRegistry.INSTANCE.registerFactory(QuickShulkerHook.QS$SHULKER_SCROLLABLE_CONTAINER, ScrollableScreen::createScreen);
-	}
+        @Override
+        public void registerClient() {
+                ScreenProviderRegistry.INSTANCE.registerFactory(QuickShulkerHook.QS$SHULKER_9x7_CONTAINER, Generic9x7Screen::createScreen);
+                ScreenProviderRegistry.INSTANCE.registerFactory(QuickShulkerHook.QS$SHULKER_11x7_CONTAINER, Generic11x7Screen::createScreen);
+                ScreenProviderRegistry.INSTANCE.registerFactory(QuickShulkerHook.QS$SHULKER_13x7_CONTAINER, Generic13x7Screen::createScreen);
+                ScreenProviderRegistry.INSTANCE.registerFactory(QuickShulkerHook.QS$SHULKER_SCROLLABLE_CONTAINER, ScrollableScreen::createScreen);
+                ScreenProviderRegistry.INSTANCE.registerFactory(QuickShulkerHook.QS$ENDER_SLAB, ScrollableScreen::createScreen);
+        }
 }

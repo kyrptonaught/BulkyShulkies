@@ -279,11 +279,11 @@ public abstract class AbstractShulkerBoxBlock extends BlockWithEntity implements
 
 	protected abstract void openContainer(BlockPos pos, PlayerEntity playerEntity, Text displayName);
 
-    public int getSlotCount() {
+	public int getSlotCount() {
 		return this.slotCount;
 	}
 
-    public interface SingleTypePropertyRetriever<T> {
+	public interface SingleTypePropertyRetriever<T> {
 		T getFromShulker(AbstractShulkerBoxBE blockEntity);
 	}
 

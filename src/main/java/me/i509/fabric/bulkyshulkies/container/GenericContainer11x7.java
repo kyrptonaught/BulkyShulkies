@@ -24,13 +24,11 @@
 
 package me.i509.fabric.bulkyshulkies.container;
 
-import net.kyrptonaught.quickshulker.api.ItemStackInventory;
 import net.minecraft.container.Container;
 import net.minecraft.container.Slot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
-import net.minecraft.inventory.SidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 
